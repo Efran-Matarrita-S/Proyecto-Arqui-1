@@ -16,15 +16,15 @@ mainENP
 
 verificar_repetido PROC
 
-verificar_repetidoENP
+verificar_repetidoENDP
 
 recorrer_potencias PROC
 
-recorrer_potenciasENP
+recorrer_potenciasENDP
 
 raices_primitivas PROC
 
-raices_primitivasENP
+raices_primitivasENDP
 
 
 

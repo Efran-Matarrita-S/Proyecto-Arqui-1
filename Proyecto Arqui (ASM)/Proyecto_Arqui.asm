@@ -5,13 +5,15 @@ includelib \Windows\System32\kernel132.dll
 
 ExitProcess proto
 .data
-	p dd ?
-	r dw ?
+	p dw ? ;Esto recibira el numero primo a sacarle raices primitivas (numero maximo = 32 749)
+	r dw  0,0,0,0,0,0,0,0,0,0 ;Aca se guardaran las respuestas, este es el vector, son 10 elementos de 2 bytees (word) cada uno
 
 .code
 main PROC
+lea rdi, r ;La direccion del vector donde agregaremos las respuestas
+; No se que registro o que usaremos para la direccion de p pero lo definimos despues
 
-mainENP
+mainENDP
 
 
 verificar_repetido PROC
